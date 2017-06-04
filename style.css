@@ -1,0 +1,116 @@
+body {
+  background-color: #262626;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 8000px;
+}
+
+.art {
+  position: absolute;
+  top: 370px;
+  left: 22px;
+  background: #700542;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  color: white;
+}
+
+#banner{
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+  margin-left: 170px;
+
+}
+
+#gallery {
+  padding: 4px 0 0 0px;
+
+}
+
+#gallery img {
+  margin: 8px;
+  width: 214px;
+  cursor: pointer;
+  border-radius: 3px;
+  height: 300px;
+}
+
+#gallery img:hover {
+  margin: 8px;
+  opacity: .8;
+}
+
+header h1 {
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+#buttons button {
+  background-color: #E84AFF;
+  margin-right: 12px;
+  border: 0;
+  padding: 8px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+#buttons button.active {
+  background-color: #FFB833;
+  color: #111;
+}
+
+#buttons {
+  margin: 8px;
+  padding-bottom: 8px;
+}
+
+#search {
+  margin: 8px;
+}
+
+input[type="text"]{
+  border-radius: 3px;
+  border: 1px solid #efefef;
+  padding: 0 8px;
+}
+
+button:hover{
+  background-color: #111;
+  color: #fff;
+}
+
+/**/
+
+.image { 
+   position: relative; 
+   float: left;
+   margin-bottom: 70px;
+}
+
+h4 {
+   position: absolute; 
+   top: 300px;
+   left: 20px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   width: 200px;
+   height: 45px;
+   padding-left: 4px;
+   text-align: center;
+   border-radius: 10px;
+
+}
+
+h4 span { 
+   color: white; 
+   font: 14px Helvetica, Sans-Serif;
+}
