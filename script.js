@@ -51,11 +51,17 @@ for(var i = 0; i < $imgs.length; i++)
           $imgs[i].parentElement.style.display = 'none';
         }
         var temp = $imgs.filter(tagged[tagName])
-        for (i = 0; i < temp.length; i++) { 
-          temp[i].parentElement.style.display = 'inline';
+        for (i = 0; i < temp.length; i++) {          
           $cache[i] = temp[i];
         }
-        $search.filter();
+        var query = document.getElementById("filter-search").value.trim().toLowerCase();
+        $cache.forEach(function(img) {
+          var index = 0;
+          if (query) {
+            index = img.alt.toLowerCase().indexOf(query);
+          }
+          img.parentElement.style.display = index === -1 ? 'none' : 'inline';
+        })
       }
     }).appendTo($buttons);
   });
